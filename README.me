@@ -1,1 +1,37 @@
 Stack, Queues - LIFO FIFO PROJECT
+
+ * Create a C program that accepts a file as an argument. Why ? Because To run our Monty byte code
+   interpreter you will type the following command :
+       * ./monty bytecode_file.m
+ * This means your C program has to first check whether the user provided a monty byte code file as
+   an argument.
+ * Your interpreter should therefore be expecting 2 arguments (the name of the program itself followed
+   by the name or path to the file with the Monty bytecodes).
+ * This will be checked within your main function, whether argc=2. If not then,throw an error message
+ * From there the next thing would be to check if the provided file is accessible or not and if it is then
+   go ahead and open the file.
+ * This done within your main() function.
+
+ * From this point you can go on and define a few helper functions that will help your interpreter to
+   run successfully.
+     * You need a function to check if the first character in a line is a newline
+     * You need a function to tokenize the command and value in the line.
+     * You need a function that uses the first token (command) to find what opcode(instruction) to
+       execute.
+     * You will also need a function to free everything in your stack.
+
+ * After creating these functions you then go ahead and define functions that will execute each of the
+   following opcodes below. Including checking for comments.
+ * A call to any of these functions means an execution of the opcode. This is what your interpreter
+   should ‘interpret’ .
+
+ * All these functions can be in separate .c files or you could group them together in individual files
+   but following the betty coding style of no more than 5 functions per file.
+
+ * Don’t forget to create your monty.h header file to include the prototypes of all your functions
+
+ * Once done you will compile all your .c files using the command provided in the project guidelines
+        * gcc -Wall -Werror -Wextra -pedantic -std=c89 *.c -o monty
+
+ * At this point you can go ahead and create a folder that will have a couple of monty bytecode files
+   with the .m extension. These files will serve as tests to check whether your interpreter works.
