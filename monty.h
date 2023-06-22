@@ -82,6 +82,6 @@ void rotate_bottom(stack_t **top, __attribute__((unused)) unsigned int line);
 void insertNode(stack_t **top, int n);
 void enqueue(stack_t **top, int n);
 void queue_op(stack_t **top, unsigned int line);
-void stackTop(stack_t **top, unsigned int line);
+void stack_top(stack_t **top, unsigned int line);
 
 #endif
