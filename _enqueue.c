@@ -43,6 +43,6 @@ void enqueue(stack_t **top, int n)
 	else
 	{
 		count->next = new;
-		count->prev = count;
+		new->prev = count;
 	}
 }
