@@ -110,7 +110,6 @@ void mod(stack_t **top, unsigned int line)
 	*top = current->next;
 	free(current);
 }
-#include "monty.h"
 /**
  * mul - Multiplication of the top two elements in the stack.
  * @top: Pointer to the stack
@@ -142,7 +141,6 @@ void mul(stack_t **top, unsigned int line)
 	*top = current->next;
 	free(current);
 }
-#include "monty.h"
 /**
   *sub - Subtract two numbers
   *@top: Pointer to the top of the stack
