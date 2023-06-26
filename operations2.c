@@ -74,9 +74,7 @@ void pall(stack_t **top, unsigned int line)
 	(void)line;
 
 	current = *top;
-	if (current == NULL)
-		return;
-	while (current)
+	while (current != NULL)
 	{
 		printf("%d\n", current->n);
 		current = current->next;
